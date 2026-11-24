@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f4">
+  <title>Commonroom — your campus, together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="Commonroom home"><span class="brand-mark">c<span>.</span></span><span>commonroom</span></a>
+      <div class="campus-card"><div class="campus-icon">N</div><div><strong>Northstar College</strong><span>Campus community</span></div><span class="chevron">⌄</span></div>
+      <p class="nav-label">YOUR SPACE</p>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#home"><span class="nav-icon">⌂</span>Home <span class="nav-count">4</span></a>
+        <a class="nav-item" href="#discover"><span class="nav-icon">⌕</span>Discover</a>
+        <a class="nav-item" href="#messages"><span class="nav-icon">▤</span>Messages <span class="unread-dot"></span></a>
+        <a class="nav-item" href="#saved"><span class="nav-icon">♡</span>Saved</a>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <div class="side-heading"><p class="nav-label">YOUR SPACES</p><button aria-label="Add a space">+</button></div>
+      <a class="space-link" href="#design"><span class="space-dot coral"></span>Design students</a>
+      <a class="space-link" href="#campus"><span class="space-dot yellow"></span>Campus life</a>
+      <a class="space-link" href="#jobs"><span class="space-dot green"></span>Internships & jobs</a>
+      <div class="sidebar-bottom"><div class="online-note"><span></span> 248 students around</div><div class="profile-row"><div class="avatar avatar-lilac">JD</div><div><strong>Jamie Davis</strong><span>Student account</span></div><button aria-label="Profile options">···</button></div></div>
+    </aside>
+
+    <main class="main-content" id="home">
+      <header class="topbar"><div class="mobile-brand"><span class="brand-mark">c<span>.</span></span> commonroom</div><div class="breadcrumbs">Northstar College <span>/</span> <b>Home</b></div><div class="top-actions"><button class="icon-button" aria-label="Search">⌕</button><button class="icon-button notification" aria-label="Notifications">♧<i></i></button><div class="avatar avatar-lilac small-avatar">JD</div></div></header>
+      <div class="feed-layout">
+        <section class="feed-column">
+          <div class="welcome-row"><div><p class="eyebrow">TUESDAY, NOVEMBER 24, 2026</p><h1>Your campus, <em>together.</em></h1><p class="welcome-sub">A little more connected starts right here.</p></div><div class="sun-illustration" aria-hidden="true">☀</div></div>
+          <div class="feed-tabs"><button class="tab active" data-filter="all">For you</button><button class="tab" data-filter="Following">Following</button><button class="tab" data-filter="Announcements">Announcements</button><span class="tab-underline"></span></div>
+          <form class="composer" id="post-form"><div class="avatar avatar-lilac">JD</div><div class="composer-main"><textarea id="post-text" rows="1" placeholder="Share something with your campus..." aria-label="Write a post"></textarea><div class="composer-tools"><button type="button" class="tool-button" id="photo-button"><span>▧</span> Photo</button><input type="file" id="photo-input" accept="image/*" hidden><span class="composer-hint">Good things happen when we share.</span><button class="post-button" type="submit">Post <span>↗</span></button></div></div></form>
+          <div class="feed-heading"><h2>Happening around campus <span class="sparkle">✳</span></h2><button class="sort-button">Latest <span>⌄</span></button></div>
+          <div id="posts">
+            <article class="post-card" data-category="Announcements"><div class="post-top"><div class="avatar avatar-cream">NC</div><div class="post-author"><strong>Northstar College <span class="verified">✓</span></strong><span>Campus announcements <b>·</b> 2 hours ago</span></div><button class="more-button" aria-label="More options">···</button></div><div class="post-body"><span class="announcement-tag">✳ &nbsp;CAMPUS ANNOUNCEMENT</span><h3>Fall career fair is almost here 🍂</h3><p>Meet 40+ employers, find your next opportunity, and bring a friend. Thursday, Oct 24 · 11am–3pm in the Student Union. Everyone is welcome!</p><a class="event-link" href="#career-fair"><span class="event-icon">▦</span><span><strong>Northstar Fall Career Fair</strong><small>Thursday, October 24 · Student Union</small></span><span class="event-arrow">↗</span></a></div><div class="post-actions"><button class="like-button"><span>♡</span> <b>24</b></button><button class="comment-button"><span>▢</span> <b>8 comments</b></button><button class="share-button"><span>↗</span> Share</button><button class="bookmark-button" aria-label="Save post">♧</button></div></article>
+            <article class="post-card" data-category="Following"><div class="post-top"><div class="avatar avatar-blue">MK</div><div class="post-author"><strong>Morgan Kim</strong><span>Design students <b>·</b> 4 hours ago</span></div><button class="more-button" aria-label="More options">···</button></div><div class="post-body"><p>Spent the afternoon in the print lab experimenting with risograph colors. Still figuring out the layers, but I love how this one turned out! 🎨</p><div class="art-preview"><div class="art-shape shape-one"></div><div class="art-shape shape-two"></div><div class="art-shape shape-three"></div><span>little experiments, big ideas</span></div></div><div class="post-actions"><button class="like-button"><span>♡</span> <b>18</b></button><button class="comment-button"><span>▢</span> <b>3 comments</b></button><button class="share-button"><span>↗</span> Share</button><button class="bookmark-button" aria-label="Save post">♧</button></div></article>
+          </div>
+        </section>
+        <aside class="right-rail"><section class="rail-card birthday-card"><div class="card-kicker">A LITTLE CELEBRATION</div><div class="birthday-art">🎂</div><h3>Good things ahead.</h3><p>There’s always something happening around Northstar. Stay in the loop, cheer each other on, and make this place yours.</p><button class="text-link">Explore your community <span>→</span></button></section><section class="rail-card events-card"><div class="rail-heading"><h3>Coming up</h3><button>See all</button></div><a class="mini-event" href="#film"><div class="date-tile"><b>25</b><span>NOV</span></div><div><strong>Outdoor movie night</strong><small>Wed · 7:30pm · The Quad</small></div><span class="mini-arrow">↗</span></a><a class="mini-event" href="#fair"><div class="date-tile yellow-tile"><b>26</b><span>NOV</span></div><div><strong>Fall career fair</strong><small>Thu · 11am · Student Union</small></div><span class="mini-arrow">↗</span></a><a class="mini-event" href="#market"><div class="date-tile green-tile"><b>28</b><span>NOV</span></div><div><strong>Student makers market</strong><small>Sat · 10am · Arts building</small></div><span class="mini-arrow">↗</span></a></section><section class="rail-card people-card"><div class="rail-heading"><h3>People to meet</h3><button>See all</button></div><div class="person-row"><div class="avatar avatar-peach">AR</div><div><strong>Alex Rivera</strong><small>Illustration · Year 2</small></div><button class="follow-button">Follow <span>+</span></button></div><div class="person-row"><div class="avatar avatar-green">ST</div><div><strong>Sam Taylor</strong><small>Computer science · Year 3</small></div><button class="follow-button">Follow <span>+</span></button></div></section><footer class="rail-footer">About &nbsp;·&nbsp; Community guidelines &nbsp;·&nbsp; Help<br>© 2026 Commonroom</footer></aside>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
